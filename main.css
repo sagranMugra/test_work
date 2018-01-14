@@ -1,0 +1,100 @@
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: green;
+}
+.wrapper {
+	min-height: 600px;
+	width: 960px;
+	position: relative;
+	margin: 15px auto 20px;
+	border-radius: 15px;
+	background: white;
+	box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.5), 0px 2px 4px 0px rgba(0,0,0,0.5);
+}
+.head {
+	border-bottom: 1px solid rgba(150,150,150,0.29);
+	line-height: 49px;
+    position: relative;
+    padding: 0 20px;
+}
+.back_link {
+	font: 18px;
+	text-decoration: none;
+}
+
+.card_content {
+	padding: 4px 0;
+}
+.scene {
+	position: relative;
+	min-height: 540px;
+	padding: 10px;
+}
+.condition {
+	position: absolute;
+	top: 14px;
+	left: 172.5px;
+	font-size: 36px;
+	text-align: center;
+}
+.board {
+	width: 880px;
+	height: 380px;
+	margin: 90px auto 0;
+	position: relative;
+	background-color: white;
+}
+.up {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}​
+.bottom {
+	margin: 10px;
+}
+.box_with_strelka {
+	position: absolute;
+	left:35px;
+	bottom: 155px;
+	z-index: 10;
+	display: flex;
+	flex-direction:row;
+	text-align: center; 
+}
+.line {
+	position: absolute;
+	bottom: 90px;
+	background-image: url(sprite.png);
+	height: 85px;
+	width: 875px;
+	z-index: 1;
+}
+.strelka_1 {
+	background-image: url(4.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: transparent;
+	height: 34px;
+	width: 234px;
+}
+
+.strelka_2 {
+	background-image: url(4.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: transparent;
+	height: 34px;
+	width: 312px;
+	visibility: hidden;
+}
+input {
+	width: 15px;
+	height: 15px;
+	margin: 10px;
+}
+.second_in, .sum_in {
+	visibility: hidden;
+}

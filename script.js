@@ -18,18 +18,19 @@ $(".wrapper").ready(function(){
   $(".first_out").css("border", "none");
   $(".second_out").css("border", "none");
   $(".sum_out").css("border", "none");
-  $('.strelka_1').css("width", first_end[first-min_first]);
-  $(".strelka_2").css("width", second_end[sum-min_sum] - (+first_end[first-min_first]) - 35);
+  $('.arrow_1').css("width", first_end[first-min_first]);
+  $(".arrow_2").css("width", second_end[sum-min_sum] - (+first_end[first-min_first]) - 35);
   
   $(".first_in").keyup(function(){
     var first_int = $(".first_in").val();
     if(first_int == first) {
       $(".second_in").css("visibility","visible");
-      $(".strelka_2").css("visibility","visible");
+      $(".arrow_2").css("visibility","visible");
       $(".first_in").prop("readonly", "true");
       $(".first_out").css("background", "white");
       $(".first_in").css("color", "black");
-      $(".first_in").css("border-color", "white");
+      $(".first_in").css("border", "none");
+      $(".first_in").css("margin", 12);
       $(".first_in").css("autofocus", "false");
       $('.second_in').focus();
     }else{
@@ -47,7 +48,8 @@ $(".wrapper").ready(function(){
       $(".second_in").prop("readonly", "true");
       $(".second_out").css("background", "white");
       $(".second_in").css("color", "black");
-      $(".second_in").css("border-color", "white");
+      $(".second_in").css("border", "none");
+      $(".first_in").css("margin", 10);
       $('.sum_out').focus();
     }else{
       $(".second_out").css("background", "yellow");

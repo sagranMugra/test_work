@@ -55,7 +55,7 @@ body {
 .bottom {
 	margin: 10px;
 }
-.box_with_strelka {
+.box_with_arrow {
 	position: absolute;
 	left:35px;
 	bottom: 155px;
@@ -72,8 +72,8 @@ body {
 	width: 875px;
 	z-index: 1;
 }
-.strelka_1 {
-	background-image: url(4.png);
+.arrow_1 {
+	background-image: url(arrow.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-color: transparent;
@@ -81,8 +81,8 @@ body {
 	width: 234px;
 }
 
-.strelka_2 {
-	background-image: url(4.png);
+.arrow_2 {
+	background-image: url(arrow.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-color: transparent;
